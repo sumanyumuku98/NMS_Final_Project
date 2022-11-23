@@ -1,0 +1,5 @@
+0 l1 init
+0 r1 request m0 r(m0)
+0 r1 request m1 r(m1)
+5 r1 request m2 r(m2)
+6 r1 request m3 r(m3)
