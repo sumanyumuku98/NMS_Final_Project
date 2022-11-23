@@ -93,13 +93,10 @@ def generateEventList(eventFile):
 ##################
 #replacement debug function, ignores BLANKTIMESTEP event and simply prints anything else
 def debugNOBLANK(eventName, data):
-    if eventName == 'BLANKTIMESTEP':
+    if eventName in ('_BLANKTIMESTEP', '_EVENTLIST', '_EVENTS'):
         return
-    if eventName == 'EVENTLIST':
-        return
-        for e in data:
-            print(d.__dict__)
-        print()
+    if eventName[0] == '_':
+        eventName = eventName[1:]
     if isinstance(data, Msg):
         return
         #prints Msg dicts rather than the object pointer location
@@ -369,42 +366,10 @@ def multipaxos(node, event, debugF):
 ######################    
 #from paxospre import generateTop, generateEventList
 from base import simulate
-efile = 'ev1'
+efile = 'ex'
 eventList = generateEventList(efile)
 top, topD = generateTop()
 log = simulate(eventList, top, topD, multipaxos, debugNOBLANK)
-#log = simulate(eventList, top, topD, multipaxos)
 
-#from svg import generateSvg
-#generateSvg('a.svg', log, '5x', '5x')
-exit()
-#format
-ops = {}
-c = ''
-for l in log:
-    t, m = l[:2]
-    if not hasattr(m, 'c'):
-        continue
-    c = m.c
-    #first instance
-    if m.c not in ops:
-        ops[m.c] = [t]
-    else:
-        ops[m.c] += [t]
-o = ops.pop(c)
-
-min = o[-1]-o[0]
-max = o[-1]-o[0]
-sum = o[-1]-o[0]
-count = 1
-
-#ops
-for op in ops:
-    lat = ops[op][-1]-ops[op][0]
-    if lat < min:
-        min = lat
-    elif lat > max:
-        max = lat
-    sum += lat
-    count += 1
-print(efile + ' ' + str([min, max, sum/count]))
+from svg import generateSvg
+generateSvg('a.svg', log, '5x', '5x')
