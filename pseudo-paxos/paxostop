@@ -1,0 +1,16 @@
+quorum
+a1,a2,a3
+learner 
+l1
+proposer
+p1 
+acceptor
+a1
+a2
+a3
+connection
+p1 a1 3
+p1 a2 2
+p1 a3 4
+p1 l1 6
+end
