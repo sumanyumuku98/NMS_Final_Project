@@ -67,7 +67,6 @@ def generateSvg(filename, log, width=-1, height=-1, strokeWidth=2):
             msg, source, t0, t1 = msgs[id]
             fromH = nodeHeight[source]
             toH = nodeHeight[msg.dstNode]
-            #svg.write('<g fill="none" stroke="black" stroke-width="{}">'.format(strokeWidth/2)))
             svg.write('\t<line x1="{}" y1="{}" x2="{}" y2="{}" stroke="black" stroke-width="{}" />\n'.format((t0+timeSpacing)*hSpacing, fromH, (timeSpacing+t1)*hSpacing, toH, strokeWidth/2))
             #make an arrow at dst
             #toH under

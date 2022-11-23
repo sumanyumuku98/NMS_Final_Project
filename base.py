@@ -142,18 +142,19 @@ def simulate(inEList, topology, topDict, alg, debugF=noDebug, clean=True):
     while(len(eventList) > 0):
         #checks if there are no events at current time
         if curSimTime not in eventList:
-            debugF('BLANKTIMESTEP', curSimTime)
+            debugF('_BLANKTIMESTEP', curSimTime)
             curSimTime += 1
             continue
-        debugF('TIMESTEP', curSimTime)
+        debugF('_TIMESTEP', curSimTime)
         #gets all events for current time and iterates through them 
         events = eventList.pop(curSimTime)
+        debugF('_EVENTS', events)
         for event in events:
             dstNode = topD[event.dstNode]
             #adds event to log
             log += [(curSimTime, event, None)] 
             #processes the event and adds any resulting events to the log
-            debugF('EVENT', event)
+            debugF('_EVENT', event)
             alg(dstNode, event, debugF)
         curSimTime += 1
         #clean eventList to prevent errors
@@ -161,8 +162,8 @@ def simulate(inEList, topology, topDict, alg, debugF=noDebug, clean=True):
             for key in [k for k in eventList]:
                 if key < curSimTime:
                     eventList.pop(key)
-        debugF('EVENTLIST', eventList)
-    debugF('END', curSimTime)
+        debugF('_EVENTLIST', eventList)
+    debugF('_END', curSimTime)
     return log
     
 #formats log to msgs[id] -> [msg, source, t0(, t1)]
@@ -179,4 +180,4 @@ def formatLog(log):
         #receiver
         else:
             msgs[id] += [time]
-    return msgs
+    return msgs	

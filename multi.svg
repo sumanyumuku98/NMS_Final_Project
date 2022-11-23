@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg>
+<svg width="810.0" height="200.0" xmlns="http://www.w3.org/2000/svg">
+	<rect fill="#fff" stroke="#000" x="0" y="0" width="810.0" height="200.0"/>
+	<text y="50.0" x="25.0">r1</text>
+	<line x1="55.86206896551724" y1="50.0" x2="760.0" y2="50.0" stroke="black" stroke-width="2" />
+	<text y="100.0" x="25.0">l1</text>
+	<line x1="55.86206896551724" y1="100.0" x2="760.0" y2="100.0" stroke="black" stroke-width="2" />
+	<text y="150.0" x="25.0">a1</text>
+	<line x1="55.86206896551724" y1="150.0" x2="760.0" y2="150.0" stroke="black" stroke-width="2" />
+
+	<line x1="55.86206896551724" y1="50.0" x2="195.51724137931035" y2="100.0" stroke="black" stroke-width="1.0" />
+	 <line x1="189.9310344827586" y1="90.0" x2="195.51724137931035" y2="100.0" stroke="black" stroke-width="1.0" />
+	 <line x1="173.17241379310343" y1="98.0" x2="195.51724137931035" y2="100.0" stroke="black" stroke-width="1.0" />
+	<line x1="55.86206896551724" y1="100.0" x2="195.51724137931035" y2="150.0" stroke="black" stroke-width="1.0" />
+	 <line x1="189.9310344827586" y1="140.0" x2="195.51724137931035" y2="150.0" stroke="black" stroke-width="1.0" />
+	 <line x1="173.17241379310343" y1="148.0" x2="195.51724137931035" y2="150.0" stroke="black" stroke-width="1.0" />
+	<line x1="195.51724137931035" y1="150.0" x2="335.17241379310343" y2="100.0" stroke="black" stroke-width="1.0" />
+	 <line x1="329.58620689655174" y1="110.0" x2="335.17241379310343" y2="100.0" stroke="black" stroke-width="1.0" />
+	 <line x1="312.8275862068965" y1="102.0" x2="335.17241379310343" y2="100.0" stroke="black" stroke-width="1.0" />
+	<line x1="335.17241379310343" y1="100.0" x2="474.8275862068965" y2="150.0" stroke="black" stroke-width="1.0" />
+	 <line x1="469.2413793103448" y1="140.0" x2="474.8275862068965" y2="150.0" stroke="black" stroke-width="1.0" />
+	 <line x1="452.4827586206896" y1="148.0" x2="474.8275862068965" y2="150.0" stroke="black" stroke-width="1.0" />
+	<line x1="474.8275862068965" y1="150.0" x2="614.4827586206897" y2="100.0" stroke="black" stroke-width="1.0" />
+	 <line x1="608.8965517241379" y1="110.0" x2="614.4827586206897" y2="100.0" stroke="black" stroke-width="1.0" />
+	 <line x1="592.1379310344827" y1="102.0" x2="614.4827586206897" y2="100.0" stroke="black" stroke-width="1.0" />
+	<line x1="614.4827586206897" y1="100.0" x2="754.1379310344827" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="748.551724137931" y1="60.0" x2="754.1379310344827" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="731.7931034482758" y1="52.0" x2="754.1379310344827" y2="50.0" stroke="black" stroke-width="1.0" />
+
+	<text y="75.0" x="125.68965517241378" stroke="red">p(1,m1)</text>
+	<text y="125.0" x="125.68965517241378" stroke="red">p1a(0,l1)</text>
+	<text y="125.0" x="265.34482758620686" stroke="red">p1b(0,l1)</text>
+	<text y="125.0" x="405.0" stroke="red">p2a(1,m1)</text>
+	<text y="125.0" x="544.655172413793" stroke="red">p2b(0,l1)</text>
+	<text y="75.0" x="684.3103448275862" stroke="red">D(1,m1)</text>
+</svg>
