@@ -1,6 +1,13 @@
 # DCASim 
 A Simulator for Distributed Consensus Algorithms [[Wiki]](https://github.com/RukNdf/DCASim/wiki)
 
+DCASim allows for the simulation of higly abstracted implementations of distributed consensus algorithms. It was made as a tool to help understand and test the workings of higly distributed consensus algorithms without the need for a complex implementation. 
+
+As the abstract implementations lack the optimization a real implementation would have the simulation can't properly account for processing time and is therefore unsuitable for the avaliation of real world performance. The only delay in the systems are point to point latency which limits the usage in systems with other more significant factors (e.g. consensus in clusters, blockchain, and consensus with limited throughput) to verifying the correctness of the algoritms. 
+
+
+
+
 ## Files
 #### base.py
 Base simulation file. Contains all necessary structures and functions required for the simulation. 
