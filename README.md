@@ -1,5 +1,5 @@
 # DCASim 
-A Simulator for Distributed Consensus Algorithms [[Wiki]](https://github.com/RukNdf/DCASim/wiki)
+A discrete event simulator for distributed consensus algorithms [[Wiki]](https://github.com/RukNdf/DCASim/wiki)
 
 DCASim allows for the simulation of higly abstracted implementations of distributed consensus algorithms. It was made as a tool to help understand and test the workings of higly distributed consensus algorithms without the need for a complex implementation. 
 
