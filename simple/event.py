@@ -1,4 +1,6 @@
 #Base events file
+import sys
+sys.path.append('../')
 from base import Msg, addLocalEvent
 
 #generate event list from file

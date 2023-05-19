@@ -132,13 +132,19 @@ def simulate(inEList, topology, topDict, alg, debugF=noDebug, clean=True):
     global curSimTime
     global topD
     global log
+    comOverHead=0
+    proposals=0
+    overheadFile='overhead.txt'
+    consensusFile='consensus.txt'
     #changes global eventlist to received event list
     eventList = inEList
     topD = topDict
     #events log
     log = []
     #advances time until there are no events left
-    curSimTime = 0    
+    curSimTime = 0
+    firstProposalTime=None
+    meanConsensus=0    
     while(len(eventList) > 0):
         #checks if there are no events at current time
         if curSimTime not in eventList:
@@ -147,15 +153,23 @@ def simulate(inEList, topology, topDict, alg, debugF=noDebug, clean=True):
             continue
         debugF('_TIMESTEP', curSimTime)
         #gets all events for current time and iterates through them 
+        
         events = eventList.pop(curSimTime)
         debugF('_EVENTS', events)
         for event in events:
             dstNode = topD[event.dstNode]
+            if event.type=='msg':
+                proposals+=1
+                firstProposalTime=curSimTime
+            else:
+                comOverHead+=1
             #adds event to log
             log += [(curSimTime, event, None)] 
             #processes the event and adds any resulting events to the log
             debugF('_EVENT', event)
             alg(dstNode, event, debugF)
+            if dstNode.type=='learner' and event.type=='commit':
+                meanConsensus+=(curSimTime-firstProposalTime)
         curSimTime += 1
         #clean eventList to prevent errors
         if clean:
@@ -164,6 +178,13 @@ def simulate(inEList, topology, topDict, alg, debugF=noDebug, clean=True):
                     eventList.pop(key)
         debugF('_EVENTLIST', eventList)
     debugF('_END', curSimTime)
+    comOverHead-=proposals
+    
+    with open(overheadFile, 'a') as f:
+        f.write('%d,%d\n' % (proposals, comOverHead))
+        
+    with open(consensusFile, 'a') as f:
+        f.write('%d,%.3f\n' % (proposals, meanConsensus))
     return log
     
 #formats log to msgs[id] -> [msg, source, t0(, t1)]

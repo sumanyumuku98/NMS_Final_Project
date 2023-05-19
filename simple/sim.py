@@ -67,7 +67,7 @@ def simple(node, event, debugF):
         msg = event.id
         node.msgAccept[msg] += 1
         debugF('Node ' + node.name + ' receive accept', msg + ' from ' + event.source)
-        if(node.msgAccept[msg] == 2):
+        if(node.msgAccept[msg] == acceptThreshold):
             debugF('Node ' + node.name + ' commits', msg)
          
          

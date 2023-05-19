@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg>
+<svg width="750.0" height="250.0" xmlns="http://www.w3.org/2000/svg">
+	<rect fill="#fff" stroke="#000" x="0" y="0" width="750.0" height="250.0"/>
+	<text y="50.0" x="25.0">A</text>
+	<line x1="55.55555555555556" y1="50.0" x2="700.0" y2="50.0" stroke="black" stroke-width="2" />
+	<text y="100.0" x="25.0">B</text>
+	<line x1="55.55555555555556" y1="100.0" x2="700.0" y2="100.0" stroke="black" stroke-width="2" />
+	<text y="150.0" x="25.0">C</text>
+	<line x1="55.55555555555556" y1="150.0" x2="700.0" y2="150.0" stroke="black" stroke-width="2" />
+	<text y="200.0" x="25.0">D</text>
+	<line x1="55.55555555555556" y1="200.0" x2="700.0" y2="200.0" stroke="black" stroke-width="2" />
+
+	<line x1="111.11111111111111" y1="50.0" x2="250.0" y2="100.0" stroke="black" stroke-width="1.0" />
+	 <line x1="244.44444444444446" y1="90.0" x2="250.0" y2="100.0" stroke="black" stroke-width="1.0" />
+	 <line x1="227.77777777777777" y1="98.0" x2="250.0" y2="100.0" stroke="black" stroke-width="1.0" />
+	<line x1="111.11111111111111" y1="50.0" x2="388.8888888888889" y2="150.0" stroke="black" stroke-width="1.0" />
+	 <line x1="383.33333333333337" y1="140.0" x2="388.8888888888889" y2="150.0" stroke="black" stroke-width="1.0" />
+	 <line x1="366.6666666666667" y1="148.0" x2="388.8888888888889" y2="150.0" stroke="black" stroke-width="1.0" />
+	<line x1="111.11111111111111" y1="50.0" x2="166.66666666666669" y2="200.0" stroke="black" stroke-width="1.0" />
+	 <line x1="161.11111111111111" y1="190.0" x2="166.66666666666669" y2="200.0" stroke="black" stroke-width="1.0" />
+	 <line x1="144.44444444444446" y1="198.0" x2="166.66666666666669" y2="200.0" stroke="black" stroke-width="1.0" />
+	<line x1="166.66666666666669" y1="200.0" x2="222.22222222222223" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="216.66666666666666" y1="60.0" x2="222.22222222222223" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="200.0" y1="52.0" x2="222.22222222222223" y2="50.0" stroke="black" stroke-width="1.0" />
+	<line x1="194.44444444444446" y1="50.0" x2="333.33333333333337" y2="100.0" stroke="black" stroke-width="1.0" />
+	 <line x1="327.7777777777778" y1="90.0" x2="333.33333333333337" y2="100.0" stroke="black" stroke-width="1.0" />
+	 <line x1="311.1111111111111" y1="98.0" x2="333.33333333333337" y2="100.0" stroke="black" stroke-width="1.0" />
+	<line x1="194.44444444444446" y1="50.0" x2="472.22222222222223" y2="150.0" stroke="black" stroke-width="1.0" />
+	 <line x1="466.6666666666667" y1="140.0" x2="472.22222222222223" y2="150.0" stroke="black" stroke-width="1.0" />
+	 <line x1="450.0" y1="148.0" x2="472.22222222222223" y2="150.0" stroke="black" stroke-width="1.0" />
+	<line x1="194.44444444444446" y1="50.0" x2="250.0" y2="200.0" stroke="black" stroke-width="1.0" />
+	 <line x1="244.44444444444446" y1="190.0" x2="250.0" y2="200.0" stroke="black" stroke-width="1.0" />
+	 <line x1="227.77777777777777" y1="198.0" x2="250.0" y2="200.0" stroke="black" stroke-width="1.0" />
+	<line x1="250.0" y1="100.0" x2="388.8888888888889" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="383.33333333333337" y1="60.0" x2="388.8888888888889" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="366.6666666666667" y1="52.0" x2="388.8888888888889" y2="50.0" stroke="black" stroke-width="1.0" />
+	<line x1="250.0" y1="200.0" x2="305.55555555555554" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="300.0" y1="60.0" x2="305.55555555555554" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="283.3333333333333" y1="52.0" x2="305.55555555555554" y2="50.0" stroke="black" stroke-width="1.0" />
+	<line x1="333.33333333333337" y1="100.0" x2="472.22222222222223" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="466.6666666666667" y1="60.0" x2="472.22222222222223" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="450.0" y1="52.0" x2="472.22222222222223" y2="50.0" stroke="black" stroke-width="1.0" />
+	<line x1="388.8888888888889" y1="150.0" x2="666.6666666666667" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="661.1111111111112" y1="60.0" x2="666.6666666666667" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="644.4444444444445" y1="52.0" x2="666.6666666666667" y2="50.0" stroke="black" stroke-width="1.0" />
+	<line x1="472.22222222222223" y1="150.0" x2="750.0" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="744.4444444444445" y1="60.0" x2="750.0" y2="50.0" stroke="black" stroke-width="1.0" />
+	 <line x1="727.7777777777778" y1="52.0" x2="750.0" y2="50.0" stroke="black" stroke-width="1.0" />
+
+	<text y="75.0" x="180.55555555555557" stroke="red">p(id_simple)</text>
+	<text y="100.0" x="250.0" stroke="red">p(id_simple)</text>
+	<text y="125.0" x="138.88888888888889" stroke="red">p(id_simple)</text>
+	<text y="125.0" x="194.44444444444446" stroke="red">a(id_simple)</text>
+	<text y="75.0" x="263.8888888888889" stroke="red">p(id_simple2)</text>
+	<text y="100.0" x="333.33333333333337" stroke="red">p(id_simple2)</text>
+	<text y="125.0" x="222.22222222222223" stroke="red">p(id_simple2)</text>
+	<text y="75.0" x="319.44444444444446" stroke="red">a(id_simple)</text>
+	<text y="125.0" x="277.77777777777777" stroke="red">a(id_simple2)</text>
+	<text y="75.0" x="402.77777777777777" stroke="red">a(id_simple2)</text>
+	<text y="100.0" x="527.7777777777778" stroke="red">a(id_simple)</text>
+	<text y="100.0" x="611.1111111111111" stroke="red">a(id_simple2)</text>
+</svg>

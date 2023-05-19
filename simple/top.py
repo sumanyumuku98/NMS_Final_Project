@@ -1,4 +1,6 @@
 #Base topology file
+import sys
+sys.path.append('../')
 from base import Node
 
 #bidirectional connection with same latency
